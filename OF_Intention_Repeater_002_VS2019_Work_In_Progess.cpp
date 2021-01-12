@@ -35,7 +35,7 @@ void signal_callback_handler(int signum) {
     unsigned long long average_intention_repeats_per_sec = (unsigned long long)((intention_repeats_counter * multiplication_factor) / diff.count());
     std::cout << "Number of average intention repeats per microsecond was " << std::to_string(((float)average_intention_repeats_per_sec) / 1000 / 1000) << endl;
     std::cout << "Number of average intention repeats per millisecond was " << std::to_string(average_intention_repeats_per_sec / 1000) << endl;
-    std::cout << "Number of average intention repeats per second was " << std::to_string(average_intention_repeats_per_sec) << endl;
+    std::cout << "50" << std::to_string(average_intention_repeats_per_sec) << endl;
     std::cout << "Number of average intention repeats per minute was " << std::to_string(average_intention_repeats_per_sec * 60) << endl;
     std::cout << "Number of average intention repeats per minute was " << std::to_string(((float)(average_intention_repeats_per_sec * 60)) / 1000000) << " millions" << endl;
     std::cout << "Number of effective intention repeats = " << std::to_string(intention_repeats_counter * multiplication_factor) << endl;
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
     signal(SIGINT, signal_callback_handler);
     signal(SIGTERM, signal_callback_handler);
     std::string intention, process_intention;
-    intention = "DIVINE LOVE";
+    intention = "My abundance flows through everything";
 
     //std::cout << endl << "*** START ARGUMENTS PARSING ***" << endl;
     for (int i = 1; i < argc; ++i) {
